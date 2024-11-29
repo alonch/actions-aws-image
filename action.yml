@@ -9,7 +9,7 @@ inputs:
     required: false
     default: "./"
 outputs: 
-  url: 
+  tag: 
     description: "Image Tag"
     value: ${{ steps.login-ecr.outputs.registry }}/${{ inputs.name }}-${{ github.repository_id }}:${{ github.sha }}-${{ github.run_attempt	}}v
 runs:
