@@ -1,6 +1,9 @@
 name: 'Actions AWS Image'
 description: 'Provision AWS ECR, build and push image'
 inputs:
+  name:
+    description: Action Name
+    required: true
   docker-path:
     description: "Path to Dockerfile"
     required: false
